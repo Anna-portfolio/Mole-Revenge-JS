@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+    font-family: "Architects Daughter", cursive, Verdana, Geneva, Tahoma,
+        sans-serif;
+}
+
+.game-container {
+    content: "";
+    height: 540px;
+    width: 540px;
+    background: url("images/meadow.png") no-repeat;
+    background-size: cover;
+}
+
+.game-container__timesup {
+    display: none;
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    line-height: 540px;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+}
+.game-container__timesup h1 {
+    margin: 0 auto;
+}
+.score-time-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.game-container__mole,
+.game-container__hammer {
+    content: "";
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 55px;
+    background-size: cover;
+}
+.game-container__mole {
+    background: url("images/mole-player.png") no-repeat;
+}
+.game-container__hammer {
+    background: url("images/hammer.png") no-repeat;
+}
